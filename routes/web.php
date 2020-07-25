@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,9 +13,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
+
+use App\Category;
+use App\Shop;
+use App\User;
+use App\Product;
 Route::get('/', function () {
-    return view('welcome');
+    return Product::all();
 });
 
 Auth::routes();
