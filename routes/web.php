@@ -24,7 +24,7 @@ use App\Shop;
 use App\User;
 use App\Product;
 Route::get('/', function () {
-    return Product::all();
+    return 1;
 });
 
 Auth::routes();
