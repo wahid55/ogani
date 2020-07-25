@@ -10,6 +10,3 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/database/migrations/2020_07_25_010711_create_attributes_products_table.php
-app/Attribute.php
-app/Product.php
