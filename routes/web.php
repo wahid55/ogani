@@ -24,7 +24,7 @@ use App\Shop;
 use App\User;
 use App\Product;
 Route::get('/', function () {
-    return 1;
+    return Shop::find(5)->user;
 });
 
 Auth::routes();

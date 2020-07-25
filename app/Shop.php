@@ -9,4 +9,8 @@ class Shop extends Model
     protected $fillable = [
         'name', 'description', 'ratings', 'user_id'
     ];
+
+    public function user() {
+        return $this->belongsTo('App\User');
+    }
 }
