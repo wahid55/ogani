@@ -23,8 +23,9 @@ use App\Category;
 use App\Shop;
 use App\User;
 use App\Product;
+use App\Attribute;
 Route::get('/', function () {
-    return Product::find(1)->shop;
+    return 1;
 });
 
 Auth::routes();

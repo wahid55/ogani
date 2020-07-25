@@ -17,4 +17,8 @@ class Product extends Model
     public function shop() {
         return $this->belongsTo('App\Shop');
     }
+
+    public function attributes() {
+        return $this->belongsToMany('App\Attribute');
+    }
 }

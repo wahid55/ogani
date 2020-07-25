@@ -9,4 +9,8 @@ class Attribute extends Model
     protected $fillable = [
         'code', 'name', 'frontend_type', 'is_filterable', 'is_required'
     ];
+
+    public function products() {
+        return $this->belongsToMany('App\Product');
+    }
 }
