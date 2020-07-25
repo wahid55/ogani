@@ -21,4 +21,8 @@ class Product extends Model
     public function attributes() {
         return $this->belongsToMany('App\Attribute');
     }
+
+    public function orders() {
+        return $this->belongsToMany('App\Order');
+    }
 }
