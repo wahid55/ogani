@@ -40,4 +40,8 @@ class User extends Authenticatable
     public function shop() {
         return $this->hasOne('App\Shop');
     }
+
+    public function orders() {
+        return $this->hasMany('App\Order');
+    }
 }

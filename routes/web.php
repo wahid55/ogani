@@ -24,6 +24,7 @@ use App\Shop;
 use App\User;
 use App\Product;
 use App\Attribute;
+use App\Order;
 Route::get('/', function () {
     return 1;
 });
